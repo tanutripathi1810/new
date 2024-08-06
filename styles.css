@@ -1,0 +1,299 @@
+
+.bento-container {
+    display: grid;
+    grid-template-columns: 2fr 1fr 1fr;
+    grid-template-rows: auto auto;
+    gap: 20px;
+    background-color: var(--bg-color);
+    color: white;
+    padding: 20px;
+    border-radius: 10px;
+    max-width: 100%;
+    height: auto;
+    margin: 0;
+}
+
+.bento-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr); 
+    grid-template-rows: repeat(2, 300px);
+    gap: 20px;
+    width: 100%;
+    padding-top: 1rem;
+    
+}
+
+
+
+.bento-item {
+    border-radius: 10px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    color: white;
+    position: relative;
+    overflow: hidden;
+}
+
+.image-section {
+    grid-column: 1 / span 2;
+    grid-row: 1 / span 2;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.head-text {
+    
+    font-size: 3rem;
+    color: rgb(242, 230, 230);
+    text-shadow: white;
+}
+.btn{
+    color:var(--main-color);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 4rem;
+    font-weight: 600;
+}
+.btn:hover{
+    transform:none;
+    box-shadow:none;
+}
+.btn :hover{
+    box-shadow: #242229;
+}
+.explore-btn{
+    position: absolute;
+    bottom:3rem;
+    
+}
+.explore-btn:hover{
+    transform: none;
+    box-shadow: none;
+}
+.image-section{
+   
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.image-section img {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 20rem;
+    border-radius: 10px;
+}
+
+.graph-section {
+    grid-column: 2 / span 37;
+    grid-row: 1 / span 1;
+    background-color: rgb(32, 6, 60);
+    border-radius: 10px;
+    padding: 20px;
+    background-image: url("C:\Users\TANU TRIPATHI\OneDrive\Desktop\kalkini\Kalkini-B2B\src\assets\istockphoto-821675798-612x612.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    font-size: 3rem;
+    color: var(--main-color);
+}
+.graph-section h3{
+    position: absolute;
+    bottom: 5rem;
+    font-size: 2rem;
+    color: white
+}
+.text-section1 {
+    grid-column: 2 / span 1;
+    grid-row: 2 / span 1;
+    background-color: rgb(244, 224, 173);
+    border-radius: 10px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 305px;
+    width: 350px;
+    position: absolute;
+    left: 82rem;
+    
+}
+.text-section1 :hover{
+    transform: none;
+    box-shadow: none;
+}
+.blog-upper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: auto;
+    font-size: 1rem;
+    color: black;
+}
+
+.blog-upper h3 {
+    margin: 0;
+    font-size: 2rem;
+    font-weight: bold;
+    margin-top: 3px;
+    color:rgb(38, 36, 36);
+}
+.blog-upper .arrow{
+    color: red;
+}
+.arrow {
+    padding-left: 3rem;
+    font-size: 2rem;
+    color: black;
+}
+.arrow :hover{
+    color:rgb(66, 52, 27);
+    transform: scale(1.2);
+}
+.text-section1 h1 {
+    margin: 0;
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: rgb(62, 57, 57);
+    margin-top: -2rem;
+    position: absolute;
+    bottom: 3rem;
+}
+
+.text-section1 p {
+    font-size: 5rem;
+    font-weight: 600;
+    color: rgb(62, 57, 57);
+    position: absolute;
+    bottom: 6rem;
+}
+
+.text-section2 {
+    grid-column: 3 / span 1;
+    grid-row: 2 / span 1;
+    background-color: rgb(194, 140, 245);
+    border-radius: 10px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 305px;
+    width: 350px;
+    position: absolute;
+    left: 120rem;
+}
+.text-section2:hover{
+    transform: none;
+    box-shadow: none;
+}
+.bento-item:hover {
+    transform: scale(1.02);
+    transition: transform 0.3s ease-in-out;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    
+  }
+  
+  .image-section:hover {
+    background-color: rgba(0, 0, 0, 0.5);
+  }
+  
+  .graph-section:hover {
+    background-color: rgba(32, 6, 60, 0.8);
+  }
+  
+  .text-section1:hover {
+    background-color:  rgb(244, 224, 173);
+  }
+  
+  .text-section2:hover {
+    background-color: rgb(194, 140, 245);
+  }
+  .faq-heading1{
+    position: absolute;
+    bottom: 3rem;
+    font-size: large;
+    
+  }
+  .faq-heading2{
+    font-size: 5rem;
+    position: absolute;
+    bottom: 7rem;
+    color: #242229;
+  }
+  .slick-prev, .slick-next {
+    color: black;
+}
+.slide-image {
+    width: 100%;
+    height: auto;
+  }
+  @media(max-width:768px){
+    .bento-container{
+        margin:0;
+        gap:0;
+      
+    }
+    .bento-grid{
+        margin:0;
+        gap:10px;
+      
+       
+    }
+    .bento-item{
+        width:100px;
+        margin:0;
+        margin-top: 20px;
+        
+    }
+    .graph-section{
+        width:250px;
+        margin:0;
+    }
+    .text-section1{
+        left:40rem;
+        width: 250px;
+        height: 150px;
+    }
+    .blog-upper{
+        display: none;
+    }
+    .text-section2{
+        left:40rem;
+        width: 250px;
+        height: 150px;
+        margin-top: 18rem;
+    }
+    .faq-heading2{
+        display: none;
+    }
+  }
+  @media(max-width:460px){
+    .bento-container{
+        display: flex;
+        flex-direction:column;
+        width:100%;
+        height:100%;
+        
+    }
+    .bento-grid{
+        display: flex;
+        flex-direction:column;
+        height:auto;
+    }
+    .graph-section{
+        width:auto;
+        margin: 0;
+        height:300px;
+    }
+    .bento-item{
+       width:auto;
+    }
+    .blog_faq{
+        display:flex;
+        width:100%;
+        justify-content: space-between;
+        gap:20px;
+    }
+  }
